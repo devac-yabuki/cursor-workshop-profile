@@ -44,7 +44,8 @@ body {
     border-right: 1px solid var(--border-color);
     padding: var(--spacing-xl) var(--spacing-lg);
     position: fixed;
-    height: 100vh;
+    height: 100vh;   /* fallback */
+    height: 100dvh;  /* modern viewport unit */
     overflow-y: auto;
 }
 
@@ -102,6 +103,12 @@ body {
     color: var(--primary-color);
 }
 
+/* Keyboard focus */
+.nav-menu a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
 /* Main Content */
 .main-content {
     margin-left: var(--sidebar-width);
@@ -122,9 +129,11 @@ body {
     letter-spacing: 1px;
 }
 
-/* ABOUT ME Section Title - Aligned with right column content */
-.about-title {
-    margin-left: calc(300px + var(--spacing-lg));
+/* ABOUT ME Section Title - align on desktop only */
+@media (min-width: 1024px) {
+    .about-title {
+        margin-left: calc(var(--sidebar-width) + var(--spacing-lg));
+    }
 }
 
 .section-content {
@@ -231,11 +240,6 @@ body {
     
     .section-title {
         font-size: 20px;
-    }
-    
-    /* ABOUT ME Section Title - No margin on mobile */
-    .about-title {
-        margin-left: 0;
     }
     
     .skills-grid {
