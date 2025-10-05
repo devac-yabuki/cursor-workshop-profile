@@ -1,2 +1,2 @@
 # cursor-workshop-todo
-Cursor Workshop Tokyoで使用するサンプルのTodoアプリです
+Cursor Workshop Tokyoで使用するサンプルサイト
