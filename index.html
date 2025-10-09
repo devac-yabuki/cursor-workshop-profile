@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Name のポートフォリオ。自己紹介、職務経歴、スキル、連絡先を掲載。">
+    <meta name="description" content="Your Name の自己紹介サイト。自己紹介、好きな食べ物、連絡先を掲載。">
     <title>Portfolio - ABOUT ME</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,84 +28,71 @@
             </div>
             
             <ul class="nav-menu">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#introduction">自己紹介</a></li>
+                <li><a href="#favorite-food">好きな食べ物</a></li>
+                <li><a href="#contact">連絡先</a></li>
             </ul>
         </nav>
         
         <!-- Main Content -->
         <main class="main-content">
-            <!-- About Section -->
-            <section id="about" class="section">
-                <h2 class="section-title about-title">ABOUT ME</h2>
+            <!-- Introduction Section -->
+            <section id="introduction" class="section">
+                <h2 class="section-title">自己紹介</h2>
                 <div class="section-content">
                     <p>
-                        こんにちは！私はWebデベロッパーとして、ユーザーフレンドリーで機能的なWebサイトを作ることに情熱を注いでいます。
-                        フロントエンドからバックエンドまで幅広い技術に関心を持ち、常に新しいことを学び続けています。
+                        こんにちは！私は Web デベロッパーとして、ユーザビリティとアクセシビリティを重視したサイト制作に取り組んでいます。
+                        フロントエンドからバックエンドまで幅広く携わり、新しい技術を取り入れながら課題解決を進めることが得意です。
                     </p>
                     <p>
-                        現在は、モダンなJavaScriptフレームワークを使用したアプリケーション開発に力を入れており、
-                        レスポンシブデザインやアクセシビリティにも配慮したWeb開発を心がけています。
+                        最近は TypeScript とモダンなフレームワークを組み合わせたプロジェクトに注力し、
+                        チーム開発の効率化と品質向上の両立を目指しています。
                     </p>
                 </div>
             </section>
-            
-            <!-- Experience Section -->
-            <section id="experience" class="section">
-                <h2 class="section-title">EXPERIENCE</h2>
+
+            <!-- Favorite Food Section -->
+            <section id="favorite-food" class="section">
+                <h2 class="section-title">好きな食べ物</h2>
                 <div class="section-content">
-                    <div class="experience-item">
-                        <h3>Web Developer</h3>
-                        <span class="period">2022 - Present</span>
-                        <p>フロントエンド開発を中心に、React.jsやVue.jsを使用したSPAアプリケーションの開発を担当。</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Junior Developer</h3>
-                        <span class="period">2020 - 2022</span>
-                        <p>HTML/CSS/JavaScriptによるWebサイト制作、WordPressを使用したCMSサイトの構築。</p>
-                    </div>
+                    <ol class="favorite-grid">
+                        <li class="favorite-card" aria-label="第1位 カレー">
+                            <span class="favorite-card__rank" aria-hidden="true">1</span>
+                            <h3 class="favorite-card__title">カレー</h3>
+                        </li>
+                        <li class="favorite-card" aria-label="第2位 オムライス">
+                            <span class="favorite-card__rank" aria-hidden="true">2</span>
+                            <h3 class="favorite-card__title">オムライス</h3>
+                        </li>
+                        <li class="favorite-card" aria-label="第3位 ハンバーグ">
+                            <span class="favorite-card__rank" aria-hidden="true">3</span>
+                            <h3 class="favorite-card__title">ハンバーグ</h3>
+                        </li>
+                    </ol>
                 </div>
             </section>
-            
-            <!-- Skills Section -->
-            <section id="skills" class="section">
-                <h2 class="section-title">SKILLS</h2>
-                <div class="section-content">
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <h3>Frontend</h3>
-                            <ul>
-                                <li>HTML5 / CSS3</li>
-                                <li>JavaScript (ES6+)</li>
-                                <li>React.js / Vue.js</li>
-                                <li>Sass / SCSS</li>
-                            </ul>
-                        </div>
-                        <div class="skill-item">
-                            <h3>Backend</h3>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>API Development</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
+
             <!-- Contact Section -->
             <section id="contact" class="section">
-                <h2 class="section-title">CONTACT</h2>
+                <h2 class="section-title">連絡先</h2>
                 <div class="section-content">
-                    <p>お仕事のご相談やお問い合わせは、以下の連絡先までお気軽にどうぞ。</p>
-                    <div class="contact-info">
-                        <p>Email: your.email@example.com</p>
-                        <p>GitHub: github.com/yourusername</p>
-                        <p>LinkedIn: linkedin.com/in/yourname</p>
-                    </div>
+                    <p>お仕事のご相談やカジュアルなお問い合せがありましたら、下記までお気軽にご連絡ください。</p>
+                    <address class="contact-info">
+                        <ul class="contact-list">
+                            <li class="contact-list__item">
+                                <span class="contact-label">Email:</span>
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </li>
+                            <li class="contact-list__item">
+                                <span class="contact-label">GitHub:</span>
+                                <a href="https://github.com/yourusername">github.com/yourusername</a>
+                            </li>
+                            <li class="contact-list__item">
+                                <span class="contact-label">LinkedIn:</span>
+                                <a href="https://www.linkedin.com/in/yourname/">linkedin.com/in/yourname</a>
+                            </li>
+                        </ul>
+                    </address>
                 </div>
             </section>
         </main>
