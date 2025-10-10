@@ -154,7 +154,7 @@ body {
     max-width: 800px;
 }
 
-.section-content p {
+.section-content__paragraph {
     margin-bottom: var(--spacing-md);
 }
 
