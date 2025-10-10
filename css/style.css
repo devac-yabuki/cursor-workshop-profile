@@ -59,9 +59,16 @@ body {
     border-right: 1px solid var(--border-color);
     padding: var(--spacing-xl) var(--spacing-lg);
     position: fixed;
-    height: 100vh;   /* fallback */
-    height: 100dvh;  /* modern viewport unit */
+.sidebar {
+    position: fixed;
+    height: 100vh;
     overflow-y: auto;
+}
+
+@supports (height: 100dvh) {
+    .sidebar {
+        height: 100dvh;
+    }
 }
 
 .profile-section {
