@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Name の自己紹介サイト。自己紹介、好きな食べ物、連絡先を掲載。">
+    <title>Portfolio - ABOUT ME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Side Navigation -->
+        <nav class="sidebar">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img
+                        class="profile-image__img"
+                        src="image/image.jpg"
+                        alt="Your Name のプロフィール写真"
+                        width="120"
+                        height="120"
+                        loading="lazy"
+                        decoding="async"
+                        onerror="this.style.display='none'"
+                    >
+                </div>
+                <h1 class="profile-name">Your Name</h1>
+                <p class="profile-title">職業</p>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#introduction">自己紹介</a></li>
+                <li><a href="#favorite-food">好きな食べ物</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Introduction Section -->
+            <section id="introduction" class="section">
+                <h2 class="section-title">自己紹介</h2>
+                <div class="section-content">
+                    <p>
+                        自己紹介文~~~~~~~
+                    </p>
+                </div>
+            </section>
+
+            <!-- Favorite Food Section -->
+            <section id="favorite-food" class="section">
+                <h2 class="section-title">好きな食べ物 Top3</h2>
+                <div class="section-content">
+                    <ol class="favorite-grid">
+                        <li class="favorite-card" aria-label="第1位 好きなもの1位">
+                            <span class="favorite-card__rank" aria-hidden="true">第１位</span>
+                            <h3 class="favorite-card__title">好きなもの</h3>
+                        </li>
+                        <li class="favorite-card" aria-label="第2位 好きなもの2位">
+                            <span class="favorite-card__rank" aria-hidden="true">第２位</span>
+                            <h3 class="favorite-card__title">好きなもの</h3> 
+                        </li> 
+                        <li class="favorite-card" aria-label="第3位 好きなもの3位">
+                            <span class="favorite-card__rank" aria-hidden="true">第３位</span>
+                            <h3 class="favorite-card__title">好きなもの</h3> 
+                        </li> 
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2 class="section-title">連絡先</h2>
+                <div class="section-content">
+                    <p>お仕事のご相談やカジュアルなお問い合せがありましたら、下記までお気軽にご連絡ください。</p>
+                    <address class="contact-info">
+                        <ul class="contact-list">
+                            <li class="contact-list__item">
+                                <span class="contact-label">Email:</span>
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
