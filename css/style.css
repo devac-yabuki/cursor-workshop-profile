@@ -101,11 +101,11 @@ body {
     list-style: none;
 }
 
-.nav-menu li {
+.nav-menu__item {
     margin-bottom: var(--spacing-md);
 }
 
-.nav-menu a {
+.nav-menu__link {
     display: block;
     color: var(--text-color);
     text-decoration: none;
@@ -115,12 +115,11 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
+.nav-menu__link:hover {
     color: var(--primary-color);
 }
 
-/* Keyboard focus */
-.nav-menu a:focus-visible {
+.nav-menu__link:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
