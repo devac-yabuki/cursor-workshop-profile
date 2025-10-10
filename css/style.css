@@ -59,8 +59,6 @@ body {
     border-right: 1px solid var(--border-color);
     padding: var(--spacing-xl) var(--spacing-lg);
     position: fixed;
-.sidebar {
-    position: fixed;
     height: 100vh;
     overflow-y: auto;
 }
